@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAP Imóveis|Apartamentos</title>    
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/section.css">
+</head>
+<body>
+    <div class="container__main"> <!--container de toda a pagina-->
+        <header class="header__container">
+            <div class="header__logo">
+                <a href="#"><img src="./img/zap.svg" alt="logoZAP"></a>
+            </div>
+            <div class="header__Nav ">
+                <ul class="menu">
+                    <li class="item">
+                       <a href="#">Comprar</a>
+
+                    </li>
+                    <li class="item">   
+                        <a href="#">Alugar
+                        </a>
+                    </li>
+                    <li id="btn-lancamentos" class="item item-lancamentos">
+                        <button class="toggle__menu">Lançamentos
+                            <span id="seta"><img class="seta"src="./img/-keyboard-arrow-down_90691.svg" height="20px"></span>
+                        </button>
+                        <ul class="side__menu active" id="pop">
+                            <li class="li__side" ><a href="#"class="item__side">Na planta</a></li>
+                            <li class="li__side" ><a href="#"class="item__side">Em construção</a></li>
+                            <li class="li__side" ><a href="#"class="item__side">Pronto para morar</a></li>
+                            <li class="li__side" ><a href="#"class="item__side">Todos os imóveis</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">Descobrir    
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Central de ajuda
+                        </a>
+                    </li>
+                    <li><a href="#" class="Anunciar__button">Anunciar</a></li>
+                </ul>
+            </div>
+            <div class="container__button">
+                <button class="button__entrar">
+                    <span id="icon__pessoa"><img src="./img/cliente.svg" alt="cliente" height="20px">
+                    </span>
+                    <span>Entrar</span>
+                </button>
+
+                <button class="button__entrar " id="active__menu">
+                    <span id="icon__pessoa"><img src="./img/cliente.svg" alt="cliente" height="20px">
+                    </span>
+                    <span>menu</span>
+                </button>
+            </div>
+        </header>
+        <section class="container-section">
+            <div class="container-section-propaganda">
+                <a href="/" class="container-section-propaganda-link">
+                    <img src="./img/propaganda.jpg" alt="propaganda">
+                </a>
+            </div>
+             <div class="container-section2"> 
+                <div class="container-section2-wrapper">
+                    <div class="container-section2-wrapper-form">
+                        <h3 class="container-section2-wrapper-titulo">Quando você muda, tudo muda junto.</h3>
+                        <form action="#" method="post">
+                            <div class="container-section2-wrapper-content-buttons">
+                                <p class="texto-label">O que você precisa?</p>
+                                <button type="button" class="active-buttons" id="comprar">Comprar</button>
+                                <button type="button" class="buttons-options" id="alugar">Alugar</button>
+                                <button type="button" class="buttons-options" id="lancamentos">Lançamentos</button>
+                            </div>
+                            <div class="container-section2-wrapper-content-select">
+                                <p class="texto-label">Qual tipo?</p>
+                                <select name="imoveis" class="wrapper-content-select">
+                                    <option value="todos os imoveis">Todos os imoveis</option>
+                                    <option value="casa de condominio">Casas de condominio</option>
+                                    <option value="casas residencias">Casas residenciais</option>
+                                    <option value="Imoveis de luxo">Imovéis de luxo</option>
+                                </select>
+                                
+                            </div>
+                            <div class="container-section2-wrapper-content-text" >
+                                <p class="texto-label">Onde?</p>
+                                <input type="text" name="endereco" class="content-text" placeholder="Adicionar uma rua, bairro ou cidade">
+                            </div>
+                            <div class="container-section2-wrapper-content-submit">
+                            <input type="submit" class="wrapper-select-button" value="Buscar"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-section3">
+                <div class="container-section3-texto-anuncio-button">
+                    <div class="container-section3-textos">
+                        <h4 class="section3-titulo">ANUNCIANTE, CONHEÇA NOSSOS PLANOS</h4>
+                        <p class="section3-subtitulo">
+                            Quando o assunto é imóvel, o ZAP tem todas as soluções.
+                        </p>
+                        <p class="section3-texto">
+                            Dica: Ao anunciar um imóvel, contar com o apoio de corretores e imobiliárias lhe garante segurança e praticidade em toda a jornada de aluguel e venda. ZAP+ está sempre disponível para promover
+                            essa conexão e gerar negócios mais rentáveis
+                            e seguros para ambos os lados.</p>
+                    </div>
+                    <div class="container-button-section3">
+                        <button type="submit" class="section3-button-anuncio"><bold>Anunciar meu imóvel</bold></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-section4">
+                <div class="section4-titulos">
+                    <h5 class="section4-subtitulo">ZAP EM CASA</h5>
+                    <h3 class="section4-titulo">Dicas de decoração, 
+                        reforma e mercado imobiliário</h3>
+                </div>
+                <div class="section4-links-noticias">
+                    <span class="section4-span"></span> 
+                    <a class="section4-links" href="https://www.zapimoveis.com.br/blog/meu-ano-de-bil/">ZAP dá um ano de aluguel grátis em 
+                        ação com ex-BBB Bil Araújo</a><br>
+                    <a  class="section4-links" href="https://www.zapimoveis.com.br/blog/guia-cama-box-ou-tradicional-conheca-tipos-de-cama-e-faca-sua-escolha/">Guia: cama box ou tradicional?
+                         Conheça os tipos de cama e faça sua escolha </a><br>
+                         <span class="section4-span"></span> 
+                    <a class="section4-links" href="https://www.zapimoveis.com.br/blog/mosquiteiro-para-berco-do-bebe-escolha-o-ideal/">
+                        Mosquiteiro para berço 
+                        do bebê: escolha o ideal para você</a><br>
+                    <div class="container-button-section4">
+                    <a href="https://www.zapimoveis.com.br/blog/?utm_source=zapimoveis&utm_medium=link-conteudo&utm_campaign=btn-zapemcasa&_ga=2.233922072.769866212.1647427279-1680503423.1646848051"  class="section4-button-noticias">Ler mais dicas</a>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="container-section5">
+                <div class="container-titulo-section5">
+                    <h3>Pricipais locais</h3>
+                </div>
+                    <div class="container-cards-section5">
+                        <div class="container-card-section5" id="sp">
+                            <div class="container-imagem-card-section5">
+                                <img src="./img/sp.jpg" alt="">
+                            </div>
+                            <div class="container-content-card-section5">
+                                <h4 class="content-titulo-card">São paulo</h4>
+                                <div class="container-links-content">
+                                    <a href="#">São Paulo</a>
+                                    <a href="#">Campinas</a>
+                                    <a href="#">São Bernardo do Campo</a>
+                                    <a href="#">Santo André</a>
+                                    <a href="#">São Jose dos Campos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-section5" id="rj">
+                            <div class="container-imagem-card-section5">
+                                <img src="./img/rj.jpg" alt="">
+                            </div>
+                            <div class="container-content-card-section5">
+                                <h4 class="content-titulo-card">Rio de Janeiro</h4>
+                                <div class="container-links-content">
+                                    <a href="#">Rio de Janeiro</a>
+                                    <a href="#">Niteroi</a>
+                                    <a href="#">São Gonçalo</a>
+                                    <a href="#">Duque de Caxias</a>
+                                    <a href="#">Nova Iguaçu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-section5" id="mg">
+                            <div class="container-imagem-card-section5">
+                                <img src="./img/rj.jpg" alt="">
+                            </div>
+                            <div class="container-content-card-section5">
+                                <h4 class="content-titulo-card">Rio de Janeiro</h4>
+                                <div class="container-links-content">
+                                    <a href="#">Rio de Janeiro</a>
+                                    <a href="#">Niteroi</a>
+                                    <a href="#">São Gonçalo</a>
+                                    <a href="#">Duque de Caxias</a>
+                                    <a href="#">Nova Iguaçu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-section5" id="rs">
+                            <div class="container-imagem-card-section5">
+                                <img src="./img/rj.jpg" alt="">
+                            </div>
+                            <div class="container-content-card-section5">
+                                <h4 class="content-titulo-card">Rio de Janeiro</h4>
+                                <div class="container-links-content">
+                                    <a href="#">Rio de Janeiro</a>
+                                    <a href="#">Niteroi</a>
+                                    <a href="#">São Gonçalo</a>
+                                    <a href="#">Duque de Caxias</a>
+                                    <a href="#">Nova Iguaçu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-section5" id="pr">
+                            <div class="container-imagem-card-section5">
+                                <img src="./img/rj.jpg" alt="">
+                            </div>
+                            <div class="container-content-card-section5">
+                                <h4 class="content-titulo-card">Rio de Janeiro</h4>
+                                <div class="container-links-content">
+                                    <a href="#">Rio de Janeiro</a>
+                                    <a href="#">Niteroi</a>
+                                    <a href="#">São Gonçalo</a>
+                                    <a href="#">Duque de Caxias</a>
+                                    <a href="#">Nova Iguaçu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container-buttons-section5">
+                    <button id="imgvoltar" ><img src="./img/icon-seta.svg" alt=""></button>
+                    <button  id="imgpassar"><img src="./img/icon-seta.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+        <div class="container-wrapper">
+            <h4 class="titulo-wrapper-buscas">Busca mais procuradas</h4>
+            <div class="container-links-Busca-Populares" id="container-links-1">
+                <div class="content-links">
+                    <a href="#">Apartamentos para vender em São Paulo</a>
+                    <a href="#">Venda em São Paulo</a>
+                    <a href="">Quitinetes em São Paulo para alugar</a>
+                    <a href="">Apartamentos à venda em Belo Horizonte</a>
+                </div>
+                <aside class="content-oculto-links displayNone3" id="aside1">
+                    <a href="#">Apartamentos para vender em Santos</a>
+                    <a href="#">Apartamentos à venda em Curitiba</a>
+                    <a href="#">Apartamentos para alugar em Curitiba</a>
+                    <a href="#">Venda apartamentos em Porto Alegre</a>
+                    <a href="#">Apartamentos à venda em Rio de Janeiro</a>
+                    <a href="#">Apartamentos para alugar em Santos</a>
+                    <a href="#">Apartamentos para vender em Praia Grande</a>
+                    <a href="#">Apartamentos para alugar em Rio de Janeiro</a>
+                    <a href="#">Venda apartamentos em Recreio dos Bandeirantes</a>
+                    <a href="#">Apartamentos para alugar em Recreio dos Bandeirantes</a>
+                    <a href="#">Venda apartamentos em Barra da Tijuca</a>
+                </aside>
+                <div class="container-buttons-aside">
+                    <button class="btn-mostrar-mais-ou-menos" id="btn-mostrarMais-aside1">Mostrar mais</button>
+                    <button class="btn-mostrar-mais-ou-menos displayNone3"  id="btn-mostrarMenos-aside1">Mostrar menos</button>
+                </div>
+            </div>
+            <div class="container-links-Busca-Populares" id="container-links-2">
+                <div class="content-links">
+                    <a href="#">Apartamentos para vender em São Paulo</a>
+                    <a href="#">Venda em São Paulo</a>
+                    <a href="">Quitinetes em São Paulo para alugar</a>
+                    <a href="">Apartamentos à venda em Belo Horizonte</a>
+                </div>
+                <aside class="content-oculto-links  displayNone3" id="aside2">
+                    <a href="#">Apartamentos para vender em Santos</a>
+                    <a href="#">Apartamentos à venda em Curitiba</a>
+                    <a href="#">Apartamentos para alugar em Curitiba</a>
+                    <a href="#">Venda apartamentos em Porto Alegre</a>
+                    <a href="#">Apartamentos à venda em Rio de Janeiro</a>
+                    <a href="#">Apartamentos para alugar em Santos</a>
+                    <a href="#">Apartamentos para vender em Praia Grande</a>
+                    <a href="#">Apartamentos para alugar em Rio de Janeiro</a>
+                    <a href="#">Venda apartamentos em Recreio dos Bandeirantes</a>
+                    <a href="#">Apartamentos para alugar em Recreio dos Bandeirantes</a>
+                    <a href="#">Venda apartamentos em Barra da Tijuca</a>
+                </aside>
+                <div class="container-buttons-aside">
+                    <button type="button" class="btn-mostrar-mais-ou-menos" id="btn-mostrarMais-aside2">Mostrar mais</button>
+                    <button type="button" class="btn-mostrar-mais-ou-menos  displayNone3" id="btn-mostrarMenos-aside2">Mostrar menos</button>
+                </div>
+            </div>
+            <div class="container-links-Busca-Populares" id="container-links-3">
+                <div class="content-links">
+                    <a href="#">Apartamentos para vender em São Paulo</a>
+                    <a href="#">Venda em São Paulo</a>
+                    <a href="">Quitinetes em São Paulo para alugar</a>
+                    <a href="">Apartamentos à venda em Belo Horizonte</a>
+                </div>
+                <aside class="content-oculto-links displayNone3" id="aside3">
+                    <a href="#">Apartamentos para vender em Santos</a>
+                    <a href="#">Apartamentos à venda em Curitiba</a>
+                    <a href="#">Apartamentos para alugar em Curitiba</a>
+                    <a href="#">Venda apartamentos em Porto Alegre</a>
+                    <a href="#">Apartamentos à venda em Rio de Janeiro</a>
+                    <a href="#">Apartamentos para alugar em Santos</a>
+                    <a href="#">Apartamentos para vender em Praia Grande</a>
+                    <a href="#">Apartamentos para alugar em Rio de Janeiro</a>
+                    <a href="#">Venda apartamentos em Recreio dos Bandeirantes</a>
+                    <a href="#">Apartamentos para alugar em Recreio dos Bandeirantes</a>
+                    <a href="#">Venda apartamentos em Barra da Tijuca</a>
+                </aside>
+                <div class="container-buttons-aside">
+                    <button type="button" class="btn-mostrar-mais-ou-menos" id="btn-mostrarMais-aside3">Mostrar mais</button>
+                    <button type="button" class="btn-mostrar-mais-ou-menos  displayNone3" id="btn-mostrarMenos-aside3">Mostrar menos</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/zapBranco.svg" alt="">
+                <button id="Voltar-ao-topo">Voltar ao topo</button>
+            </div>
+            <div class="Encontre-Imovel">
+                <h4 class="btn-mobile-anunciar">Encontre imóveis</h4>
+                <ul class="displayNone2">
+                    <li>Venda Aluguel</li>
+                    <li>Lançamentos</li>
+                    <li> Alugar imóvel barato</li>
+                    <li>Comprar imóvel barato</li>
+                    <li>Financiamento Imobiliário</li>
+                    <li>Meu ZAP</li>
+                    <li>Blog</li>
+                    <li>Políticas de privacidade</li>
+                    <li>Política de Cookies</li>
+                    <li>Termos de uso</li>
+                    <li>Portal de Privacidade</li>
+                    <li>Mapa do site</li>
+                    <li> Ajuda</li>
+                </ul>
+            </div>
+            <div class="Anuncie-Imoveis">
+                <h4 id="btn-anuncie-imoveis">Anuncie imóveis</h4>
+                <ul class="displayNone2">
+                    <li>ZAP Pro</li>
+                    <li>ZAP Estima</li>
+                    <li> Planos de Anúncio</li>
+                    <li>Política de Qualidade</li>
+                    <li>Venda seu imóvel</li>
+                </ul>
+            </div>
+            <div class="institucional">
+                <h4 id="btn-mobile-institucional">Institucional</h4>
+                <ul class="displayNone2">
+                    <li>Quem somos</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
+            </div>
+
+            <div class="redes-sociais">
+                <div class="container-btn-redes-socias displayNone">
+                    <h4 id="btn-redes-socias">Redes socias</h4>
+                        <ul class="displayNone2 displayNone">
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                </div>
+                <div class="titulo-anunciar-imovel">
+                    <button class="btn-anunciar3">Anunciar imoveis</button>
+                </div>
+                <div class="container-redes-socias displayNone2">
+                    <img src="./img/facebook_icon-icons.com_59205.svg" alt="">
+                     <img src="./img/1491580635-yumminkysocialmedia26_83102.ico" alt="">
+                    <img src="./img/1491580651-yumminkysocialmedia28_83061.ico" alt="">
+                </div>
+                
+            </div>
+            <div class="GooglePlay-app-olx">
+                <div class="apps">
+                    <img src="./img/app-store-badge.webp" alt="">
+                    <img src="./img/google-play-badge.webp" alt="">
+                    <img src="./img/olx.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./JS/header.js"></script>      
+    <script src="./JS/section.js"></script>   
+    <script src="./JS/footer.js"></script>
+</body>
+</html>
